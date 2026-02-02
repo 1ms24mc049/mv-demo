@@ -4,13 +4,13 @@ pipeline {
 	
 	environment {
 		DOCKERHUB_CRED=credentials('dockerhub')
-		IMAGE_NAME="1ms24mc049/mv1-demo"
+		IMAGE_NAME="1ms24mc049/mv-demo"
 	}
 	
 	stages {
 		stage('checkout') {
 			steps {
-				git url:'git@github.com:1ms24mc049/mv1-demo.git', branch:'main'
+				git url:'git@github.com:1ms24mc049/mv-demo.git', branch:'main'
 			}
 		}
 
